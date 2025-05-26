@@ -13,7 +13,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <h1>Soy del 90%</h1>
+        <h1>Soy mayoría de usuarios</h1>
       </main>
       <footer className={styles.footer}>
         <a

@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1>Soy del 10%</h1>
+        <h1>Soy grupo selecto</h1>
       </main>
     </div>
   );

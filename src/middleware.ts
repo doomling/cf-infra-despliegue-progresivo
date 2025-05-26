@@ -9,7 +9,9 @@ export function middleware(request: NextRequest) {
 
     if (!version) {
       const random = Math.random();
-      const rolloutPercentage = 0.1;
+      const rolloutPercentage = parseFloat(
+        process.env.ROLLOUT_PERCENTAGE || "0.05"
+      );
 
       if (random < rolloutPercentage) {
         const response = NextResponse.redirect(new URL("/new", request.url));
